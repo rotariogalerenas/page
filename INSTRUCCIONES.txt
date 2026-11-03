@@ -1,0 +1,95 @@
+﻿SITIO WEB · CLUB ROTARIO SATÉLITE GALEREÑAS
+Instrucciones para publicar y editar la página
+
+CONTENIDO DE LA CARPETA
+  index.html ........ la página. Ábrela con doble clic para verla en tu computadora.
+  css/estilos.css ... colores, tipografías y diseño.
+  js/main.js ........ menú del celular y formulario de contacto.
+  img/ .............. logo, rueda rotaria, fotos, ícono e imagen para compartir.
+  favicon.ico ....... ícono de la pestaña del navegador.
+Sube siempre todo el contenido y respeta las carpetas, o las fotos y el diseño no se verán.
+
+Para editar index.html usa un editor de texto: Bloc de notas (Windows), TextEdit en modo
+"texto sin formato" (Mac) o Visual Studio Code. No lo abras ni lo guardes con Word.
+Usa Buscar y reemplazar (Ctrl+H en Windows, Cmd+Opción+F en Mac) para los cambios de abajo.
+
+
+1. ANTES DE PUBLICAR: CAMBIA LOS DATOS DE EJEMPLO (en index.html)
+
+  a) WhatsApp. Busca 524730000000 y reemplázalo por el número del club: 52 más los
+     10 dígitos, sin espacios ni signos (ejemplo: 524731234567). Aparece 4 veces.
+     Después busca +52 473 000 0000 y escríbelo como quieras que se lea en la página.
+  b) Correo. Busca contacto@rotarygalerenas.org y cámbialo por el correo del club
+     (aparece 3 veces).
+  c) Instagram. Cambia https://www.instagram.com/ por el enlace del perfil del club y
+     @rotarygalerenas por el usuario real.
+  d) Facebook. Cambia https://www.facebook.com/ por el enlace de la página del club.
+  e) Textos pendientes. Busca el signo [ para encontrarlos; hay 13:
+     - [Año de fundación] en Quiénes somos.
+     - [Nombre] de la tesorera y de la vicepresidenta (confirma también los cargos).
+     - [Nombre de la socia], [Profesión] y la frase de las dos socias.
+     - "Resultado: [número]" en cuatro proyectos.
+  f) Textos de ejemplo que conviene revisar con el club: misión, visión y valores;
+     metas y frase de la presidenta; descripción de los proyectos.
+
+
+2. CÓMO PUBLICAR LA PÁGINA
+
+  OPCIÓN A · Hosting con dominio propio (Hostinger, GoDaddy u otro proveedor)
+    1. Entra al panel de tu hosting y abre el Administrador de archivos (o conéctate por FTP).
+    2. Abre la carpeta public_html (en algunos servicios se llama www o htdocs).
+    3. Sube index.html, favicon.ico y las carpetas css, js e img, tal como están.
+    4. Abre tu dominio en el navegador y revisa que todo se vea bien.
+
+  OPCIÓN B · Gratis con Netlify
+    1. Crea una cuenta gratuita o inicia sesión en https://app.netlify.com
+    2. Entra a https://app.netlify.com/drop y arrastra esta carpeta completa.
+    3. Netlify publica la página en una dirección que termina en .netlify.app.
+       Después puedes conectar un dominio propio desde la configuración del sitio.
+    Si arrastras la carpeta sin iniciar sesión, la página queda protegida con una
+    contraseña temporal hasta que la reclames con tu cuenta.
+
+  Para actualizar la página después, edita los archivos y vuelve a subirlos
+  (en Netlify, arrastra de nuevo la carpeta en la sección Deploys de tu sitio).
+
+
+3. FORMULARIO DE CONTACTO
+
+  Así como está, ya funciona: la persona llena sus datos, toca "Preparar mensaje" y lo
+  envía al club con un clic por WhatsApp o por correo. Solo cambia el número y el correo
+  del punto 1; el formulario los toma de la etiqueta <form id="cform" ...>.
+
+  Para recibir los mensajes directo en el correo del club, sin que la persona tenga que
+  enviarlos ella misma:
+    1. Crea una cuenta gratuita en https://formspree.io y un formulario nuevo con el
+       correo del club.
+    2. Formspree te da una dirección como https://formspree.io/f/abcdwxyz.
+       Copia el código del final (en el ejemplo, abcdwxyz).
+    3. En index.html busca data-formspree="" y escribe el código entre las comillas:
+       data-formspree="abcdwxyz"
+    4. Vuelve a publicar y envía un mensaje de prueba (revisa también la carpeta de spam).
+       El botón cambiará a "Enviar mensaje". El plan gratuito de Formspree permite
+       alrededor de 50 mensajes al mes.
+
+
+4. CAMBIAR O AGREGAR FOTOS
+
+  - Para cambiar una foto, guarda la nueva en la carpeta img con el mismo nombre de
+    archivo (por ejemplo presidenta-gabriela-franco.webp). Si tu foto es .jpg, cambia
+    también el nombre en index.html.
+  - Para poner una foto donde hoy hay un recuadro con una cámara (proyectos y socias),
+    busca en index.html la línea del recuadro, por ejemplo:
+      <div class="ph"><svg><use href="#i-cam"/></svg><span>Foto de la socia</span></div>
+    y reemplázala por:
+      <img class="real" src="img/nombre-de-la-foto.jpg" alt="Descripción breve de la foto">
+  - Para la mesa directiva, copia el bloque <div class="member"> ... </div> de la
+    tesorera, pégalo debajo y cambia la foto, el cargo y el nombre.
+  - Usa fotos de máximo 1600 px de ancho y menos de 500 KB para que la página cargue rápido.
+
+
+5. COMPARTIR EN REDES
+
+  Cuando la página tenga su dirección definitiva, busca img/compartir.jpg en index.html
+  (línea og:image) y cámbialo por la dirección completa, por ejemplo
+  https://www.tudominio.com/img/compartir.jpg. Así WhatsApp y Facebook mostrarán la
+  imagen del club al compartir el enlace.
