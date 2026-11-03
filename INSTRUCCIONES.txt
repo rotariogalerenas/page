@@ -21,22 +21,17 @@ Los cambios que hagas en index.html no se pasan solos a pagina-un-solo-archivo.h
 ese archivo, haz en él los mismos cambios.
 
 
-1. ANTES DE PUBLICAR: CAMBIA LOS DATOS DE EJEMPLO (en index.html)
+1. ANTES DE PUBLICAR: COMPLETA LOS TEXTOS PENDIENTES (en index.html)
 
-  a) WhatsApp. Busca 524730000000 y reemplázalo por el número del club: 52 más los
-     10 dígitos, sin espacios ni signos (ejemplo: 524731234567). Aparece 4 veces.
-     Después busca +52 473 000 0000 y escríbelo como quieras que se lea en la página.
-  b) Correo. Busca contacto@rotarygalerenas.org y cámbialo por el correo del club
-     (aparece 3 veces).
-  c) Instagram. Cambia https://www.instagram.com/ por el enlace del perfil del club y
-     @rotarygalerenas por el usuario real.
-  d) Facebook. Cambia https://www.facebook.com/ por el enlace de la página del club.
-  e) Textos pendientes. Busca el signo [ para encontrarlos; hay 13:
+  Los datos de contacto ya son los del club: correo rotario.galerenas@gmail.com,
+  Instagram @club_satelite_galerenas y Facebook "Club Satélite Galereñas".
+
+  a) Textos pendientes. Busca el signo [ para encontrarlos; hay 13:
      - [Año de fundación] en Quiénes somos.
      - [Nombre] de la tesorera y de la vicepresidenta (confirma también los cargos).
      - [Nombre de la socia], [Profesión] y la frase de las dos socias.
      - "Resultado: [número]" en cuatro proyectos.
-  f) Textos de ejemplo que conviene revisar con el club: misión, visión y valores;
+  b) Textos de ejemplo que conviene revisar con el club: misión, visión y valores;
      metas y frase de la presidenta; descripción de los proyectos.
 
 
@@ -60,23 +55,32 @@ ese archivo, haz en él los mismos cambios.
   (en Netlify, arrastra de nuevo la carpeta en la sección Deploys de tu sitio).
 
 
-3. FORMULARIO DE CONTACTO
+3. FORMULARIO DE CONTACTO: LOS MENSAJES LLEGAN DIRECTO AL CORREO
 
-  Así como está, ya funciona: la persona llena sus datos, toca "Preparar mensaje" y lo
-  envía al club con un clic por WhatsApp o por correo. Solo cambia el número y el correo
-  del punto 1; el formulario los toma de la etiqueta <form id="cform" ...>.
+  Los mensajes del formulario llegan directo a rotario.galerenas@gmail.com a través de FormSubmit
+  (https://formsubmit.co), un servicio gratuito que no pide crear cuenta.
 
-  Para recibir los mensajes directo en el correo del club, sin que la persona tenga que
-  enviarlos ella misma:
-    1. Crea una cuenta gratuita en https://formspree.io y un formulario nuevo con el
-       correo del club.
-    2. Formspree te da una dirección como https://formspree.io/f/abcdwxyz.
-       Copia el código del final (en el ejemplo, abcdwxyz).
-    3. En index.html busca data-formspree="" y escribe el código entre las comillas:
-       data-formspree="abcdwxyz"
-    4. Vuelve a publicar y envía un mensaje de prueba (revisa también la carpeta de spam).
-       El botón cambiará a "Enviar mensaje". El plan gratuito de Formspree permite
-       alrededor de 50 mensajes al mes.
+  ACTIVACIÓN (una sola vez, en cuanto la página esté publicada en internet)
+    1. Abre la página publicada y envía un mensaje de prueba desde el formulario.
+       Ese primer envío solo sirve para activar el servicio: la página dirá que no se pudo
+       enviar, y es normal.
+    2. Revisa rotario.galerenas@gmail.com (también la carpeta de spam): llegará un correo de
+       FormSubmit. Ábrelo y toca el botón "Activate Form".
+    3. Envía otro mensaje de prueba. Ahora la página dirá "¡Gracias! Recibimos tu mensaje"
+       y el mensaje llegará al correo. Desde ese momento todos llegan directo.
+  Haz la activación antes de compartir la página, para no perder los primeros mensajes.
+
+  BUENO SABER
+  - El envío directo solo funciona con la página publicada en internet. Si abres los
+    archivos en tu computadora, el formulario ofrece enviar el mensaje por correo o copiarlo.
+  - Si algún envío falla, la persona ve su mensaje listo con un botón para mandarlo por correo.
+  - FormSubmit no guarda copia de los mensajes: el respaldo es tu bandeja de correo.
+  - Opcional: después de activar, FormSubmit te da un código para no mostrar el correo en
+    el código de la página. Para usarlo, en index.html busca
+    data-endpoint="https://formsubmit.co/ajax/rotario.galerenas@gmail.com" y cambia solo el correo
+    por ese código.
+  - Para que los mensajes lleguen a otro correo, cámbialo en data-endpoint y en data-email
+    (los dos están en la etiqueta <form id="cform" ...>) y repite la activación.
 
 
 4. CAMBIAR O AGREGAR FOTOS

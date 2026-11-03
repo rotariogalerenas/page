@@ -246,9 +246,6 @@ footer a{text-decoration:none;color:#e3e8fb}
 footer a:hover{color:var(--gold)}
 footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.82rem}
 @media (max-width:760px){footer .grid{grid-template-columns:1fr}}
-
-.float-wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.2)}
-.float-wa svg{width:28px;height:28px}
 </style>
 </head>
 <body>
@@ -258,8 +255,6 @@ footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255
   <symbol id="i-cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
-  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
   <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
   <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.7.2-1 1.1-1H17V2h-2.8C11 2 10 3.5 10 6v2H8v3.5h2V22h4V11.5h2.7L17 8z"/></symbol>
 </svg>
@@ -571,21 +566,22 @@ footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255
           <p class="lead">Escríbenos para colaborar en un proyecto, integrarte al club o invitarnos a tu comunidad.</p>
         </div>
         <div class="cinfo">
-          <div class="crow"><span class="ic"><svg><use href="#i-pin"/></svg></span><div><small>Zona de trabajo</small><span class="val">Guanajuato capital y comunidades del municipio, Gto.</span></div></div>
-          <div class="crow"><span class="ic"><svg><use href="#i-mail"/></svg></span><div><small>Correo institucional</small><span class="val" id="mailVal">contacto@rotarygalerenas.org</span></div></div>
-          <div class="crow"><span class="ic"><svg><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><a class="val" href="https://wa.me/524730000000" target="_blank" rel="noopener">+52 473 000 0000</a></div></div>
-          <div class="crow"><span class="ic"><svg><use href="#i-ig"/></svg></span><div><small>Instagram</small><a class="val" href="https://www.instagram.com/" target="_blank" rel="noopener">@rotarygalerenas</a></div></div>
-          <div class="crow"><span class="ic"><svg><use href="#i-fb"/></svg></span><div><small>Facebook</small><a class="val" href="https://www.facebook.com/" target="_blank" rel="noopener">Rotary Club Satélite Galereñas</a></div></div>
+          <div class="crow"><span class="ic"><svg><use href="#i-mail"/></svg></span><div><small>Correo institucional</small><a class="val" href="mailto:rotario.galerenas@gmail.com">rotario.galerenas@gmail.com</a></div></div>
+          <div class="crow"><span class="ic"><svg><use href="#i-ig"/></svg></span><div><small>Instagram</small><a class="val" href="https://www.instagram.com/club_satelite_galerenas/" target="_blank" rel="noopener">@club_satelite_galerenas</a></div></div>
+          <div class="crow"><span class="ic"><svg><use href="#i-fb"/></svg></span><div><small>Facebook</small><a class="val" href="https://www.facebook.com/people/Club-Sat%C3%A9lite-Galere%C3%B1as/61592067922469/" target="_blank" rel="noopener">Club Satélite Galereñas</a></div></div>
         </div>
       </div>
 
       <!-- FORMULARIO DE CONTACTO
-           data-whatsapp: número del club con 52 y 10 dígitos, sin espacios.
-           data-email: correo del club.
-           data-formspree: código de tu formulario de Formspree para recibir los mensajes directo en el correo (ver INSTRUCCIONES.txt). Si lo dejas vacío, la persona envía su mensaje por WhatsApp o correo. -->
-      <form class="cform" id="cform" novalidate data-whatsapp="524730000000" data-email="contacto@rotarygalerenas.org" data-formspree="">
+           data-endpoint: los mensajes llegan directo al correo del club con FormSubmit (formsubmit.co), gratis y sin cuenta.
+             La primera vez, FormSubmit manda un correo para activar el formulario (ver INSTRUCCIONES.txt).
+           data-email: correo para el botón "Enviar por correo", que aparece si el envío directo no funciona. -->
+      <form class="cform" id="cform" novalidate data-email="rotario.galerenas@gmail.com" data-endpoint="https://formsubmit.co/ajax/rotario.galerenas@gmail.com">
         <h3>Formulario de interés</h3>
-        <input type="hidden" name="subject" value="Nuevo contacto desde la página web">
+        <input type="hidden" name="_subject" value="Nuevo contacto desde la página web">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" id="f-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
         <div class="frow">
           <label for="f-name">Nombre completo<input id="f-name" name="name" autocomplete="name" required></label>
           <label for="f-phone">Teléfono / WhatsApp<input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
@@ -606,11 +602,10 @@ footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255
         <button class="btn btn-navy" id="fsubmit" type="submit" style="justify-self:start">Enviar mensaje</button>
         <div class="ok" id="fok" hidden>
           <b id="okTitle">Tu mensaje está listo</b>
-          <span id="okText">Envíalo al club por WhatsApp o por correo, o cópialo.</span>
+          <span id="okText">Envíalo al club por correo o cópialo.</span>
           <pre id="fsum"></pre>
           <div class="ok-actions">
-            <a class="btn btn-gold" id="waBtn" href="https://wa.me/524730000000" target="_blank" rel="noopener">Enviar por WhatsApp</a>
-            <a class="btn btn-ghost" id="mailBtn" href="mailto:contacto@rotarygalerenas.org">Enviar por correo</a>
+            <a class="btn btn-gold" id="mailBtn" href="mailto:rotario.galerenas@gmail.com">Enviar por correo</a>
             <button type="button" class="btn btn-ghost" id="copyBtn">Copiar mensaje</button>
           </div>
         </div>
@@ -639,8 +634,6 @@ footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255
     <div class="legal"><span>© 2026 Club Rotario Satélite Galereñas</span><span>Rotary y la rueda rotaria son marcas de Rotary International.</span></div>
   </div>
 </footer>
-
-<a class="float-wa" href="https://wa.me/524730000000" target="_blank" rel="noopener" aria-label="WhatsApp del club"><svg><use href="#i-wa"/></svg></a>
 <script>
 (function(){
   var btn=document.getElementById('menuBtn'), nav=document.getElementById('mainNav');
@@ -649,26 +642,27 @@ footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255
 
   var f=document.getElementById('cform'), err=document.getElementById('ferr'), ok=document.getElementById('fok'), sum=document.getElementById('fsum'),
       okTitle=document.getElementById('okTitle'), okText=document.getElementById('okText'), acts=ok.querySelector('.ok-actions'),
-      submit=document.getElementById('fsubmit'), wa=document.getElementById('waBtn'), mail=document.getElementById('mailBtn');
-  var WA=(f.getAttribute('data-whatsapp')||'').replace(/\D/g,''), MAIL=(f.getAttribute('data-email')||'').trim(), FS=(f.getAttribute('data-formspree')||'').trim();
-  if(!FS) submit.textContent='Preparar mensaje';
+      submit=document.getElementById('fsubmit'), mail=document.getElementById('mailBtn');
+  var MAIL=(f.getAttribute('data-email')||'').trim(), API=(f.getAttribute('data-endpoint')||'').trim();
+  if(!API) submit.textContent='Preparar mensaje';
   function val(id){return document.getElementById(id).value.trim();}
   function show(title,text,withMsg){okTitle.textContent=title;okText.textContent=text;sum.hidden=!withMsg;acts.hidden=!withMsg;ok.hidden=false;ok.scrollIntoView({behavior:'smooth',block:'nearest'});}
   f.addEventListener('submit',function(e){
     e.preventDefault();
+    if(val('f-honey')) return;
     var n=val('f-name'), m=val('f-email'), p=val('f-phone'), msg=val('f-msg');
     if(!n||!/^\S+@\S+\.\S+$/.test(m)){err.textContent='Escribe tu nombre y un correo válido (ejemplo: nombre@correo.com).';err.hidden=false;return;}
     err.hidden=true;
     var interes=(f.querySelector('input[name=interes]:checked')||{}).value||'';
     var text='Hola, Club Rotario Satélite Galereñas.\nSoy '+n+'.\nMe interesa: '+interes+'.\nCorreo: '+m+(p?'\nTeléfono: '+p:'')+(msg?'\n\n'+msg:'');
     sum.textContent=text;
-    wa.href='https://wa.me/'+WA+'?text='+encodeURIComponent(text);
     mail.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Contacto desde la página web')+'&body='+encodeURIComponent(text);
-    if(!FS){show('Tu mensaje está listo','Envíalo al club por WhatsApp o por correo, o cópialo.',true);return;}
+    if(!API){show('Tu mensaje está listo','Envíalo al club por correo o cópialo.',true);return;}
     submit.disabled=true; submit.textContent='Enviando…';
-    fetch('https://formspree.io/f/'+encodeURIComponent(FS),{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}})
-      .then(function(r){if(!r.ok)throw new Error(r.status);f.reset();show('¡Gracias! Recibimos tu mensaje','Te responderemos pronto. Si es urgente, escríbenos por WhatsApp.',false);})
-      .catch(function(){show('No se pudo enviar el formulario','Revisa tu conexión o envía tu mensaje por WhatsApp o por correo.',true);})
+    fetch(API,{method:'POST',headers:{Accept:'application/json'},body:new URLSearchParams(new FormData(f))})
+      .then(function(r){return r.json();})
+      .then(function(d){if(!d||String(d.success)!=='true')throw new Error(d&&d.message);f.reset();show('¡Gracias! Recibimos tu mensaje','Te responderemos pronto a tu correo.',false);})
+      .catch(function(x){if(window.console)console.warn('Formulario de contacto:',x&&x.message);show('No se pudo enviar el formulario','Revisa tu conexión o envía tu mensaje por correo.',true);})
       .then(function(){submit.disabled=false;submit.textContent='Enviar mensaje';});
   });
   document.getElementById('copyBtn').addEventListener('click',function(){
