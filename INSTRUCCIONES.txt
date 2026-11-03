@@ -1,17 +1,24 @@
 ﻿SITIO WEB · CLUB ROTARIO SATÉLITE GALEREÑAS
 Instrucciones para publicar y editar la página
 
-CONTENIDO DE LA CARPETA
-  index.html ........ la página. Ábrela con doble clic para verla en tu computadora.
-  css/estilos.css ... colores, tipografías y diseño.
-  js/main.js ........ menú del celular y formulario de contacto.
-  img/ .............. logo, rueda rotaria, fotos, ícono e imagen para compartir.
-  favicon.ico ....... ícono de la pestaña del navegador.
-Sube siempre todo el contenido y respeta las carpetas, o las fotos y el diseño no se verán.
+CONTENIDO DE LA CARPETA (todos los archivos van juntos, sin subcarpetas)
+  index.html .................... la página para publicar. Usa los demás archivos de esta carpeta.
+  pagina-un-solo-archivo.html ... la misma página, con el diseño y las fotos dentro de un solo
+                                  archivo. Sirve para verla o enviarla sin los demás archivos.
+  estilos.css ................... colores, tipografías y diseño.
+  main.js ....................... menú del celular y formulario de contacto.
+  archivos .png, .webp y .jpg ... logo, rueda rotaria, fotos, íconos e imagen para compartir.
+  favicon.ico ................... ícono de la pestaña del navegador.
 
-Para editar index.html usa un editor de texto: Bloc de notas (Windows), TextEdit en modo
-"texto sin formato" (Mac) o Visual Studio Code. No lo abras ni lo guardes con Word.
+Para publicar, sube todos los archivos juntos, en la misma carpeta. Si falta alguno, las
+fotos o el diseño no se verán. Abre index.html con doble clic para revisar la página en tu
+computadora antes de subirla.
+
+Para editar los archivos .html usa un editor de texto: Bloc de notas (Windows), TextEdit en
+modo "texto sin formato" (Mac) o Visual Studio Code. No los abras ni los guardes con Word.
 Usa Buscar y reemplazar (Ctrl+H en Windows, Cmd+Opción+F en Mac) para los cambios de abajo.
+Los cambios que hagas en index.html no se pasan solos a pagina-un-solo-archivo.html: si usas
+ese archivo, haz en él los mismos cambios.
 
 
 1. ANTES DE PUBLICAR: CAMBIA LOS DATOS DE EJEMPLO (en index.html)
@@ -38,7 +45,7 @@ Usa Buscar y reemplazar (Ctrl+H en Windows, Cmd+Opción+F en Mac) para los cambi
   OPCIÓN A · Hosting con dominio propio (Hostinger, GoDaddy u otro proveedor)
     1. Entra al panel de tu hosting y abre el Administrador de archivos (o conéctate por FTP).
     2. Abre la carpeta public_html (en algunos servicios se llama www o htdocs).
-    3. Sube index.html, favicon.ico y las carpetas css, js e img, tal como están.
+    3. Sube todos los archivos de esta carpeta.
     4. Abre tu dominio en el navegador y revisa que todo se vea bien.
 
   OPCIÓN B · Gratis con Netlify
@@ -74,14 +81,14 @@ Usa Buscar y reemplazar (Ctrl+H en Windows, Cmd+Opción+F en Mac) para los cambi
 
 4. CAMBIAR O AGREGAR FOTOS
 
-  - Para cambiar una foto, guarda la nueva en la carpeta img con el mismo nombre de
-    archivo (por ejemplo presidenta-gabriela-franco.webp). Si tu foto es .jpg, cambia
-    también el nombre en index.html.
+  - Para cambiar una foto, guarda la nueva en esta carpeta con el mismo nombre de archivo
+    (por ejemplo presidenta-gabriela-franco.webp). Si tu foto es .jpg, cambia también el
+    nombre en index.html.
   - Para poner una foto donde hoy hay un recuadro con una cámara (proyectos y socias),
-    busca en index.html la línea del recuadro, por ejemplo:
+    guarda la foto en esta carpeta y busca en index.html la línea del recuadro, por ejemplo:
       <div class="ph"><svg><use href="#i-cam"/></svg><span>Foto de la socia</span></div>
     y reemplázala por:
-      <img class="real" src="img/nombre-de-la-foto.jpg" alt="Descripción breve de la foto">
+      <img class="real" src="nombre-de-la-foto.jpg" alt="Descripción breve de la foto">
   - Para la mesa directiva, copia el bloque <div class="member"> ... </div> de la
     tesorera, pégalo debajo y cambia la foto, el cargo y el nombre.
   - Usa fotos de máximo 1600 px de ancho y menos de 500 KB para que la página cargue rápido.
@@ -89,7 +96,7 @@ Usa Buscar y reemplazar (Ctrl+H en Windows, Cmd+Opción+F en Mac) para los cambi
 
 5. COMPARTIR EN REDES
 
-  Cuando la página tenga su dirección definitiva, busca img/compartir.jpg en index.html
+  Cuando la página tenga su dirección definitiva, busca compartir.jpg en index.html
   (línea og:image) y cámbialo por la dirección completa, por ejemplo
-  https://www.tudominio.com/img/compartir.jpg. Así WhatsApp y Facebook mostrarán la
+  https://www.tudominio.com/compartir.jpg. Así WhatsApp y Facebook mostrarán la
   imagen del club al compartir el enlace.
